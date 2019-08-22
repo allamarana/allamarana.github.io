@@ -8,23 +8,23 @@ document.body.appendChild(app.view);
 app.renderer.backgroundColor = 0x99A0AE;
 
 var pictures = [
-    '/assets/ready/1.jpg',
-    '/assets/ready/2.jpg',
-    '/assets/ready/3.jpg',
-    '/assets/ready/4.jpg',
-    '/assets/ready/5.jpg',
-    '/assets/ready/6.jpg',
-    '/assets/ready/7.jpg',
-    '/assets/ready/8.jpg',
+    'assets/ready/1.jpg',
+    'assets/ready/2.jpg',
+    'assets/ready/3.jpg',
+    'assets/ready/4.jpg',
+    'assets/ready/5.jpg',
+    'assets/ready/6.jpg',
+    'assets/ready/7.jpg',
+    'assets/ready/8.jpg',
 ];
 
 
 var sprites = [...pictures, ...pictures]
-.map(picture => {
-    var sprite = PIXI.Sprite.from(picture);
-    sprite.picture = picture;
-    return sprite;
-});
+    .map(picture => {
+        var sprite = PIXI.Sprite.from(picture);
+        sprite.picture = picture;
+        return sprite;
+    });
 
 
 
