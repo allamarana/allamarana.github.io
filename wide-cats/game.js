@@ -36,7 +36,7 @@ function shuffle(a) {
     return a;
 }
 
-// shuffle(sprites);
+shuffle(sprites);
 
 var checked = [];
 counter = 0;
